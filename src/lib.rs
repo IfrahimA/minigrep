@@ -16,6 +16,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
         search(&config.query, &contents)
     };
 
+    //Everything printed will go to the stdout
     for line in results {
         println!("{line}");
     }
